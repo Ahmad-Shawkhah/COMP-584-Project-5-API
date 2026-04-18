@@ -1,0 +1,120 @@
+/* Reset default browser margins and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base page styles with background */
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-image: url("https://wallpaperaccess.com/full/1179614.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* header */
+header {
+  background-color: #000000;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 8px;
+}
+
+
+/* Flexbox column layout to center all content vertically */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+/* Search input and button side by side using flexbox */
+#search-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+/* VIN input field styling */
+#vin-input {
+  padding: 10px 16px;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  width: 300px;
+  letter-spacing: 1px;
+}
+
+/* Search button styling */
+#search-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Darker green on hover */
+#search-btn:hover {
+  background-color: #218838;
+}
+
+/* Center the car card horizontally */
+#card-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* Car result card - hidden until we do the search */
+#car-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 0px 60px rgb(9, 0, 0);
+  padding: 30px;
+  width: 400px;
+  display: none;
+}
+
+
+/* Car title at the top of the card */
+#car-title {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #1a1a2e;
+  border-bottom: 2px solid #1a1a2e;
+  padding-bottom: 12px;
+}
+
+/* Each detail row is a flex row with label on left, value on right */
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 0.95rem;
+}
+
+/* label on the left side of each row */
+.detail-label {
+  color: #000000;
+  font-weight: bold;
+}
+
+/*value on the right side of each row */
+.detail-value {
+  color: #000000;
+  text-align: right;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VIN Explorer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    
+    <header>
+      <h1>VIN Explorer</h1>
+      <p>Get your car details</p>
+    </header>
+
+    <main>
+
+      <!-- Search area: input & button -->
+      <div id="search-container">
+        <input type="text" id="vin-input" placeholder="e.g. 1HGBH41JXMN109186" />
+        <button id="search-btn">Search</button>
+      </div>
+
+      <!-- Car result card (Will be hidden by default, shown after search) -->
+      <div id="card-container">
+        <div id="car-card">
+          <!-- Car year, make, model displayed here -->
+          <h2 id="car-title"></h2>
+          <!-- Detail rows are built by JavaScript -->
+          <div id="details-container"></div>
+        </div>
+      </div>
+
+    </main>
+
+    <!-- Popmotion library for animations -->
+    <script src="https://unpkg.com/popmotion@8.1.24/dist/popmotion.global.min.js"></script>
+    
+    <!-- The main JavaScript file -->
+    <script src="script.js"></script>
+
+  </body>
+</html>
